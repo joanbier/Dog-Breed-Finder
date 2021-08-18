@@ -1,0 +1,33 @@
+.searchbox-form{
+  margin: $main-spacing*2 0 $main-spacing 0;
+  font-size: $base-font-size*2;
+  @media screen and (min-width: map-get($breakpoints , md )){
+    margin-top: $main-spacing*4;
+  }
+  &-label {
+    display: block;
+    color:black;
+    text-shadow: 0px 0px 10px $myColor;
+    margin: $main-spacing 0;
+  }
+  &-input {
+    display: block;
+    border: 1px solid black;
+    font-size: $base-font-size;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: $main-spacing;
+    background-color: rgba($color: #000000, $alpha: $opacity);
+    color:white;
+    width: 80%;
+    &:focus{
+    outline: none !important;
+    border-color: white;
+    box-shadow: 0 0 10px $myColor;
+    }
+    @media screen and (min-width: map-get($breakpoints , md )){
+      width: 65%;
+    }
+  }
+  
+}

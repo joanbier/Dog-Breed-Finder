@@ -1,0 +1,41 @@
+.breeds-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: $main-spacing;
+  max-width: $max-width;
+  margin: 0 auto;
+  &-btn{
+    flex-basis: 95%;
+    font-family: $font-family;
+    font-size: $small-font-size*1.5;
+    margin: 10px 0;
+    padding: 16px;
+    border: none;
+    color:white;
+    opacity: $opacity;
+    background-image: $background-image;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 1s;
+    background-size: 200% auto;           
+    box-shadow: 0px 2px 5px 1px black;
+    border-radius: 10px;
+    &:hover{
+      background-position: right center; 
+      box-shadow: 0px 0px 10px 1px black;
+      opacity: 100%;
+    }
+    @media screen and (min-width: map-get($breakpoints , xs )){
+      flex-basis: 45%;
+    }
+    @media screen and (min-width: map-get($breakpoints , md )){
+      flex-basis: 30%;
+    }
+  }
+}
+
+
+ 
+
+

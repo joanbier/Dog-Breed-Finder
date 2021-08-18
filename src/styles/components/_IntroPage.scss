@@ -1,0 +1,70 @@
+@keyframes shiba {
+  0% {height: 0;}
+  75%{height: 50%;}
+  100% {height: 40%;}
+}
+
+@keyframes slogan {
+  from {opacity: 0%}
+  to {opacity: 100%}
+}
+
+@keyframes page-opacity {
+  from {opacity: 100%}
+  to {opacity: 0}
+}
+
+
+.intro{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $myColor;
+  animation-name: page-opacity;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  &-wrapper{
+    position: relative;
+    left:50%;
+    top:50%;
+    height: 70vh;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+  }
+  &-title{
+      font-size: 2.5rem;
+      color: white;
+      @media screen and (min-width: map-get($breakpoints , xs )){
+        font-size: 3rem;
+      }
+      @media screen and (min-width: map-get($breakpoints , sm )){
+        font-size: 4rem;
+      }
+    }
+    &-image{
+      position: relative;
+      margin: $main-spacing*2.5 0;
+      animation-name: shiba;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    &-slogan{
+      font-size: 2rem;
+      opacity: 0%;
+      color: white;
+      animation-name: slogan;
+      animation-delay: 1.5s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      @media screen and (min-width: map-get($breakpoints , xs )){
+        font-size: 2.3rem;
+      }
+      @media screen and (min-width: map-get($breakpoints , md )){
+        font-size: 2.5rem;
+      }
+    }
+  }
+

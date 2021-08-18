@@ -1,0 +1,21 @@
+$base-font-size: 16px;
+$small-font-size:14px;
+
+$font-family: 'Josefin Sans', sans-serif;
+$crazy-font: 'Underdog', cursive;
+
+$main-spacing: 20px;
+$max-width: 1680px;
+
+$breakpoints: (
+xs: 500px,
+sm: 800px,
+md:1000px,
+);
+
+$myColor: #02AAB0;
+$myColor2: black;
+
+$opacity: 0.85;
+
+$background-image: linear-gradient(to right,#02AAB0  0%, #00CDAC  51%, #02AAB0  100%);
